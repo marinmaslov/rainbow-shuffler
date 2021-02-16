@@ -15,10 +15,6 @@ export default class Fetcher extends React.Component {
         this.handleButtonClick = this.handleButtonClick.bind(this);
     }
 
-    componentDidMount() {
-        this.getNewColor();
-    }
-
     setNewColor(color) {
         this.setState( prevState => ({
             color: color,
@@ -40,6 +36,10 @@ export default class Fetcher extends React.Component {
         .catch(error => {
           console.log(error)
         })
+    }
+
+    handleButtonClick() {
+        this.getNewColor()
     }
 
     render() {
