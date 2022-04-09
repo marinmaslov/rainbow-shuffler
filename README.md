@@ -7,3 +7,5 @@ Once you open the App click on the button: Shuffle.
 And start generating your random color palette!
 <img src="random-color-picker/public/img/screencapture_2.png"/>
 <img src="random-color-picker/public/img/screencapture_3.png"/>
+
+A live 🚀 version of the app can be found here: https://rainbow-shuffler.netlify.app
