@@ -26,7 +26,7 @@ export default class Fetcher extends React.Component {
     }
 
     getNewColor() {
-        axios.get(`http://www.colr.org/json/color/random?${new Date().getTime()}`)
+        axios.get(`https://www.colr.org/json/color/random?${new Date().getTime()}`)
         .then(res => {
           if(res.data.new_color !== "") {
             console.log(res.data)
