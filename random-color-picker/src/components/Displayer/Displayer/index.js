@@ -59,13 +59,13 @@ export default class Displayer extends Fetcher {
         return (
             <Container>
                 <SubContainer>
-                    { (this.state.color == "") && 
+                    { (this.state.color === "") && 
                         <>
                             
                             <Start><FontAwesomeIcon icon={faPalette} /> Let's start!</Start> 
                         </>
                     }
-                    { !(this.state.color == "") && 
+                    { !(this.state.color === "") && 
                         <>
                             <HexColor hex={ hex } />
                             <RgbColor rgb={ rgb } />
@@ -73,7 +73,7 @@ export default class Displayer extends Fetcher {
                     }
                 </SubContainer>
                 <Button onClick={ this.handleButtonClick }>Shuffle <FontAwesomeIcon icon={faSyncAlt} /></Button>
-                { !(this.state.color == "") && 
+                { !(this.state.color === "") && 
                     <ColorHistory history={ this.state.colorHistory }/>
                 }
             </Container>
